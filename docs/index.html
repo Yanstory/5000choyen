@@ -1,19 +1,20 @@
-﻿<!DOCTYPE html>
-<html lang="ja">
+<!DOCTYPE html>
+<html lang="zh-cn">
 
 <head>
 	<meta charset="utf-8">
-	<title>5000兆円ジェネレーター super</title>
-	<meta name="description" content="今、話題の5000兆円。そんな5000兆円のような画像を生成できる5000兆円ジェネレーターです。好きな文字を入れて素敵な5000兆円ライフを楽しもう！" />
+	<title>5000兆円生成器 super 中文版</title>
+	<!--机器翻译草生-->
+	<meta name="description" content="现在，话题5000兆日元。能生成5000兆日元的图像的5000兆日元的发生器。加入喜欢的文字，享受美好的5000兆日元生活吧！" />
 	<style type="text/css">
 		@font-face {
 			font-family: 'notobk';
-			src: url('notobk-subset.otf') format('opentype');
+			src: url('sansSC.otf') format('opentype');
 		}
 
 		@font-face {
 			font-family: 'notoserifbk';
-			src: url('notoserifbk-subset.otf') format('opentype');
+			src: url('serifSC.otf') format('opentype');
 		}
 
 		div {
@@ -56,19 +57,23 @@
 </head>
 
 <body>
-	<h1>5000兆円ジェネレーター super</h1>
+	<h1>5000兆円生成器 super 中文版</h1>
 	<div>
 		<p>
 			<span>
 				<!-- eslint-disable -->
-				5000兆円風の画像を生成するツールです。<font color="blue">`欲しい!`</font> も生成できます。
+				5000兆円风格图像生成器。同时支持<font color="blue">`欲しい!`</font> 的生成。
 			</span>
 		</p>
 		<hr>
 		<div>
 			<h4>Contributor</h4>
 			<span>
-				作者:
+				汉化:
+				<a href="https://github.com/yanstory">小炎</a>，
+			</span>
+			<span>
+				super日语版原作者:
 				<a href="https://twitter.com/yurafuca">@yurafuca</a>，
 			</span>
 			<span>
@@ -80,7 +85,7 @@
 
 		<div>
 			<h4>Changelog</h4>
-			<p><font color="blue">2018-06-10: 404 NotFound が表示される問題に対応しました</font></p>
+			<p>2021-05-02：中文版（基于2018-06-10版本制作，已替换简中字体）</p>
 
 		</div>
 		<hr>
@@ -93,35 +98,35 @@
 		<canvas id="canvas2" width="1500px" height="300px" style="display: none"></canvas>
 	</div>
 	<div class="text-order">
-		<font color="blue">`欲しい!`</font> の描画に
+		<font color="blue">`欲しい!`</font>的描画：
 		<input id="bar1" type="radio" name="text-order" value="image">
-		<label for="bar1">元ネタの画像を使う</label>
+		<label for="bar1">使用原版图像</label>
 		<input id="bar2" type="radio" name="text-order" value="text" checked>
-		<label for="bar2">文字を生成する</label>
+		<label for="bar2">使用文字即时生成</label>
 	</div>
 	<div class="background-order">
-		画像を保存するとき背景色を
+		输出图像的背景
 		<input id="bar3" type="radio" name="background-order" value="transparent">
-		<label for="bar3">透明にする</label>
+		<label for="bar3">使用全透明</label>
 		<input id="bar4" type="radio" name="background-order" value="white" checked>
-		<label for="bar4">白にする</label>
+		<label for="bar4">使用白色</label>
 	</div>
 	<div>
-		<span id="labelTop">赤色の文字</span>
+		<span id="labelTop">红色文字</span>
 		<input type="text" id="textboxTop" size="50" value="" spellcheck="false" oninput="_canvas.redrawTop();">
 		<br>
-		<span id="labelBottom">銀色の文字</span>
+		<span id="labelBottom">银色文字</span>
 		<input type="text" id="textboxBottom" size="50" value="" spellcheck="false" oninput="_canvas.redrawBottom();">
 	</div>
 	<div>
-		<button type="button" onclick="_canvas.save();">画像を保存する</button>
-		<button type="button" onclick="_canvas.newtab();">画像を新しいタブで開く</button>
+		<button type="button" onclick="_canvas.save();">保存到本地</button>
+		<button type="button" onclick="_canvas.newtab();">在新标签页查看</button>
 	</div>
 	<div>
 		<hr>
 
 		<p>
-			`欲しい!` はドラッグできます。
+			`欲しい!` 部分可以拖拽哦。
 			<br>
 			<video autoplay loop muted style="max-width:600px">
 				<source src="demo.mp4" type="video/mp4">
@@ -132,8 +137,10 @@
 
 	</div>
 	<div>
-		ソースコード:
+		日文版源代码:
 		<a href="https://github.com/yurafuca/5000choyen">yurafuca/5000choyen</a>
+		中文版源代码:
+		<a href="https://github.com/yanstory/5000choyen">yurafuca/5000choyen</a>
 	</div>
 
 
